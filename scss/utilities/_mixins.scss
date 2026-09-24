@@ -19,3 +19,10 @@
     box-shadow: $sombra-hover;
   }
 }
+
+@mixin tarjeta-borde($padding: 20px) {
+  border: 1px solid $color-secundario;
+  border-radius: $radio-lg;
+  padding: $padding;
+  text-align: center;
+}
