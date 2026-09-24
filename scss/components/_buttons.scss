@@ -1,21 +1,24 @@
 @use '../utilities/variables' as *;
 
-.boton {
+%boton-base {
   background-color: $color-acento;
   color: $blanco;
-  padding: 10px 20px;
-  border: none;
   border-radius: $radio-md;
-  font-family: $fuente-texto;
   cursor: pointer;
   text-decoration: none;
 }
 
+.boton {
+  @extend %boton-base;
+  padding: 10px 20px;
+  border: none;
+  font-family: $fuente-texto;
+}
+
 .btn-sesion {
-  background-color: $color-acento;
+  @extend %boton-base;
   color: $blanco !important;
   padding: 8px 16px !important;
-  border-radius: $radio-md;
   display: inline-block;
   width: auto;
   align-self: flex-start;
